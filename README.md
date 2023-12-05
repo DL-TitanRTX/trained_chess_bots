@@ -1,14 +1,8 @@
-# Krevetka-chess-engine-project
-
-![screen_chess](https://user-images.githubusercontent.com/104983707/215318392-d886b374-1d63-421b-96d2-87f949163c7e.PNG)
+# Several-chess-engine-project
 
 ![chess](https://user-images.githubusercontent.com/104983707/175565331-460224df-c0cf-4618-8e6c-e00ce4897f14.PNG)
 
 A basic chess engine coded in python, with a GUI that enables you to utilize more advanced chess engines as bots.
-
-
-# Why Krevetka?
-The name "Krevetka" means 🍤"shrimp"🦐 in russian. The use of a marine animal is in the spirit of great engines such as Stockfish, or Rybka.
 
 # The "image recognition"
 The software captures a screenshot and searches each individual pixel for colors belonging to the chessboard. It then determines the chessboard's location on the screen, ensuring its complete visibility, and begins playing. The program continually scans for any color modifications on two squares, indicating a piece has been moved, and deduces the last move made. While you can change pieces, the program requires the colors to remain the same, and moving the chessboard or altering its size during the game is forbidden.
@@ -21,11 +15,6 @@ Currently, the software is compatible with the following websites:
 
 # The Algorithm:
 The minimax algorithm explores every possible position up to a predetermined depth. It executes a recursive function which evaluates each position and determines the optimal move. Krevetka uses this algorithm with a maximum depth of three. Instead of a recursive function, I implemented it using "for" loops, as these tend to be quicker in Python.
-
-# Folders:
-- engines: Other chess engines which can be used (Please only include the executable files). You may find some useful engines here: https://chess-bot.com/blog/chess-engines-download.html
-- images: The RGB values of the highlighted squares on each websites. For illustration, if you play e2e4, both e2 and e4 will be illuminated.
-- polyglot: Various polyglot chess opening books available for selection here: https://chess.stackexchange.com/questions/35448/looking-for-polyglot-opening-books?adlt=strict&toWww=1&redig=95BF7929665C40C0966EB2870AA78E90
 
 # Files:
 - krevetka.py:
